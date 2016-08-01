@@ -1,0 +1,50 @@
+
+body {
+    font-family: times, "times new roman", serif;
+    background-color:lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: yellow;
+    text-align: center;
+}
+
+h3 {
+    color: yellow;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 24px;
+}
+
+div.photo {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+table, td, th {
+    border: 1px solid gray;
+    }
+p.intro {font-family: Arial, sans-serif; }
+p#mission {font-family: Times, serif; color:blue;}
+div.photo {
+    width: 24%;
+    height: auto;
+    text-align: center;
+    float: left;
+    border: 1px solid blue;
+}
+
