@@ -1,0 +1,99 @@
+/* Your main styles at the top apply to the smallest screen/viewport,
+   e.g. width of 320 px */
+
+/* We're using badly-formed divs in place of semantic markup.
+   But even with semantic elements, you may need to change the
+   'display' property of block or inline elements so that you can
+   lay out the design according to the instruction image. */
+
+body {
+    margin: 8px;
+    padding: 0px;
+}
+
+span, a, p {
+    padding: 20px;
+    margin: 0px;
+}
+
+.article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.header, .article, .footer {
+    margin-top: 0px;
+}
+
+div.header span.img {
+    display: block;
+    color:white;
+    background-color: #00ccee;
+    text-align:center;
+}
+
+.nav ul {
+    background: grey;
+    list-style-type: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+div.section div.article p{
+    display: block;
+    text-align:center;
+    background-color: #0033ff;
+    margin-bottom: 8px;
+}
+
+.footer {
+    background: grey;
+    text-align: center;
+}
+
+
+
+/* This is our first breakpoint! If you change the orientation of the mobile
+   phone to horizontal, then the next width breakpoint is 480px (in our case). */
+
+@media screen and (min-width: 480px)
+{
+    /* Re-style here */
+    
+    /* Tip! Since we need floating columns, we can apply the floats here
+       and also the self-clearing container trick. */
+    
+    div.section:after {
+        content: " ";
+        display: table;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    div.section div.article {
+        float: left;
+        width: 48%;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+/* We're skipping a lot of possible breakpoints here ... */
+
+
+
+@media screen and (min-width: 1280px)
+{
+    /* Re-style here, if necessary! */
+}
