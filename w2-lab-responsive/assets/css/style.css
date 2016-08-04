@@ -7,13 +7,13 @@
    lay out the design according to the instruction image. */
 
 body {
-    margin: 8px;
+    margin: 1%;
     padding: 0px;
 }
 
 span, a, p {
     padding: 20px;
-    margin: 0px;
+    margin: 0;
 }
 
 .article {
@@ -35,8 +35,8 @@ div.header span.img {
 .nav ul {
     background: grey;
     list-style-type: none;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .nav li a {
@@ -51,7 +51,7 @@ div.section div.article p{
     display: block;
     text-align:center;
     background-color: #0033ff;
-    margin-bottom: 8px;
+    margin-bottom: 1%;
 }
 
 .footer {
@@ -70,7 +70,7 @@ div.section div.article p{
     
     /* Tip! Since we need floating columns, we can apply the floats here
        and also the self-clearing container trick. */
-    
+
     div.section:after {
         content: " ";
         display: table;
@@ -81,10 +81,15 @@ div.section div.article p{
     
     div.section div.article {
         float: left;
-        width: 48%;
-        margin-right: 8px;
-        margin-bottom: 8px;
+        width: 49.5%;
+        margin-right: 0px;
+        margin-bottom: 0.5%;
     }
+    
+    div.section div.article:first-child {
+        margin-right: 1%;
+    }
+    
 }
 
 
@@ -96,4 +101,36 @@ div.section div.article p{
 @media screen and (min-width: 1280px)
 {
     /* Re-style here, if necessary! */
+    .header:after {
+        content: " ";
+        display: table;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    div span.img {
+        float: left;
+        margin: 0px;
+        width: 23%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    
+    div.nav ul li  {
+        background: grey;
+        float: left;
+        width: 25%;
+        margin: 0px;
+        margin-bottom: 1%;
+    }
+
+    
+    div.section div.article p {
+        padding-bottom: 70%;
+        margin-bottom: 1.5%;
+    }
+    
+    
+    
+    
 }
